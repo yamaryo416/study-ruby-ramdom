@@ -7,7 +7,6 @@ slice_position = [1, 2].sample
 # 二つのgroupに分けて、配列に格納
 groups = users.partition.with_index { |_, index| index <= slice_position }
 
-
 groups.each do |group|
   ## それぞれのgroupをsortして表示
   pp group.sort
